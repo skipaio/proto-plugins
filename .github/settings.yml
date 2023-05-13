@@ -1,0 +1,40 @@
+# These settings are synced to GitHub by https://probot.github.io/apps/settings/
+# Settings are inherited from skipaio/github/.github/settings.yml
+
+repository:
+  # See https://docs.github.com/en/rest/reference/repos#update-a-repository for all available settings.
+
+  private: false
+
+  # The name of the repository. Changing this will rename the repository
+  name: proto-plugins
+
+  # A short description of the repository that will show up on GitHub
+  description: A shared repo of proto plugins.
+
+  # A URL with more information about the repository
+  # homepage: https://example.github.io/
+
+  # A comma-separated list of topics to set on the repository
+  topics: proto, cicd, toolchain
+
+# Labels: define labels for Issues and Pull Requests
+labels:
+  - name: bug
+    color: CC0000
+    description: An issue with the system 🐛.
+
+  - name: feature
+    color: 336699
+    description: New functionality.
+
+  - name: auto:merge
+    color: df8bd2
+    description: Merge PRs once all conditions are met.
+
+# Collaborators: give specific users access to this repository.
+# See https://docs.github.com/en/rest/reference/repos#add-a-repository-collaborator for available options
+collaborators:
+  - username: sldavidson
+    permission: admin
+# See https://docs.github.com/en/rest/reference/teams#add-or-update-team-repository-permissions for available options

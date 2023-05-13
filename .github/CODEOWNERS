@@ -1,0 +1,17 @@
+# Default the entire repo to the dev team.
+* @dev
+
+# Root level is flowmasters.
+/* @flowmasters
+
+# Leave the rest without an owner for the default to apply.
+/*/**
+pnpm-lock.yaml
+README.md
+
+# Except for this one.
+/.github/* @flowmasters
+
+# Oh ya, and these ones too.
+/configs/** @flowmasters
+/.vscode/* @flowmasters

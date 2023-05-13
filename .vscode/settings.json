@@ -1,0 +1,15 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow": ".github/workflows/*.yml*"
+  },
+  "files.associations": {
+    "tsconfig*.json": "jsonc",
+    ".*ignore": "ignore",
+    "CODEOWNERS": "ignore",
+    ".envrc": "shellscript",
+    ".prototools": "toml"
+  },
+  "editor.defaultFormatter": "dprint.dprint",
+  "editor.formatOnSave": true
+}

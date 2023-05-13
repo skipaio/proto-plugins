@@ -1,0 +1,39 @@
+version = 1
+
+[approve]
+# allow dependabot to review its PRs
+auto_approve_usernames = ["dependabot"]
+
+[merge]
+automerge_label = ["auto:merge", "🚀 merge!", "auto:merge-first"]
+# if a PR is ready, merge it, don't place it in the merge queue.
+prioritize_ready_to_merge = true
+method = "squash"
+notify_on_conflict = true
+priority_merge_label = "auto:merge-first"
+blocking_labels = ["wip"]
+
+[merge.automerge_dependencies]
+# auto merge all PRs opened by "dependabot" that are "minor" or "patch" version upgrades.
+# "major" version upgrades will need to be manualy ignored.
+versions = ["minor", "patch"]
+usernames = ["dependabot"]
+
+[merge.message]
+# works with squash commits and semeantic PR.
+title = "pull_request_title"
+body = "pull_request_body"
+body_type = "markdown"
+strip_html_comments = true
+include_pr_number = true
+include_coauthors = true
+cut_body_before = "<!--- commit message --->"
+cut_body_after = "<!--- end commit message --->"
+cut_body_and_text = true
+
+[update]
+# keep topic branches updated with main, but control with a label
+autoupdate_label = "auto:update"
+
+# ignore dependabot because it handles its own updates
+ignored_usernames = ["dependabot"]

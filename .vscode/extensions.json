@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "dprint.dprint",
+    "redhat.vscode-yaml"
+    // "wk-j.save-and-run"
+  ]
+}
